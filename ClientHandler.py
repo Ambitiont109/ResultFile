@@ -24,6 +24,7 @@ class ClientHandler(object):
         create a new print lock
         :return: the lock created
         """
+        print("============")
         lock = threading.Lock()
         return lock
 
@@ -40,6 +41,8 @@ class ClientHandler(object):
         if not self.clienthandler:
             return
         received_data_bytes = b''
+        lock = self.print_lock()
+
         while True:
             # receive data from client
             # if no data, break the loop
@@ -47,9 +50,8 @@ class ClientHandler(object):
             data = self.clienthandler.recv(4096)
             if not data:
                 break
-            received_data_bytes = received_data_bytes + data
-        received_data_string = received_data_bytes.decode('utf-8')
-        lock = self.print_lock()
-        lock.acquire()
-        print(received_data_string)
-        lock.release()
+            lock.acquire()
+            print(data + str(self.clientid).encode('utf8'))
+            lock.release()
+            reply_msg = "received from " + str(self.clientid)
+            self.clienthandler.send(reply_msg.encode('utf8'))
