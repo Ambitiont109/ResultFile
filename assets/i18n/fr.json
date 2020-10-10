@@ -216,5 +216,6 @@
     "Child Health Details" : "Détails sur la santé de l'enfant",
     "Siblings" : "Fratrie",
     "Empty" : "Vide",
-    "Marketing data has been removed" : "Les données marketing ont été supprimées"
+    "Marketing data has been removed" : "Les données marketing ont été supprimées",
+    "Username is required" : "Nom d'utilisateur est nécessaire"
 }
