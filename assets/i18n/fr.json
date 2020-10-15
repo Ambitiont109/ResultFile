@@ -217,6 +217,7 @@
     "Siblings" : "Fratrie",
     "Empty" : "Vide",
     "Marketing data has been removed" : "Les données marketing ont été supprimées",
+<<<<<<< HEAD
     "Username is required" : "Nom d'utilisateur est nécessaire",
     "Date of Birth" : "Date de naissance",
     "3th Capital Street, karachi, Pakistan" : "3th Capital Street, Karachi, Pakistan",
@@ -232,4 +233,7 @@
     "Child has been deleted" : "L'enfant a été supprimé",
     "Delete" : "Effacer"
 
+=======
+    "Username is required" : "Nom d'utilisateur est nécessaire"
+>>>>>>> c2c0b9327e77bc3804c7592d86b121fd61ea0ad7
 }
