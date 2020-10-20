@@ -230,6 +230,9 @@
     
     "Father’s email" : "Courriel du père",
     "Child has been deleted" : "L'enfant a été supprimé",
-    "Delete" : "Effacer"
+    "Delete" : "Effacer",
+    "Read" : "Lis",
+    "There are unread messages" : "Il y a des messages non lus",
+    "New Message has been arrived" : "Un nouveau message est arrivé"    
 
 }
